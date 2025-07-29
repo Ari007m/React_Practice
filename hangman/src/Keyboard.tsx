@@ -1,4 +1,4 @@
-import styles from "./KeyboardModule.css"
+import styles from "./Keyboard.module.css"
 
 export const Keyboard = () => {
 
