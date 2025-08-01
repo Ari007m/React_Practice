@@ -13,14 +13,12 @@ function getWord(){
 }
 
 function App() {
+
   const [wordToGuess, setWordToGuess] = useState(getWord);
-
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
-
   const inCorrectLetters = guessedLetters.filter(
     letter => !wordToGuess.includes(letter)
   )
-
   const isLoser = inCorrectLetters.length >= 6;
   const isWinner = wordToGuess.split("").every(letter => guessedLetters.includes(letter));
 
