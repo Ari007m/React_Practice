@@ -34,6 +34,24 @@ function Suggestions() {
         <p>Suggestions for you</p>
         <b className="ms-auto">See All</b>
       </div>
+
+      {(suggestions.length > 0) ? (
+        <div>
+          {suggestions.map((suggestion: any) => (
+            <div key={suggestion.id}>
+              <div className='d-flex'>
+                <img className='dp rounded-circules' src={suggestion.profile_pic} alt="Profile Pic" />
+                <h5>{suggestion.username}</h5>
+                <small className="text-primary ms-auto">Follow</small>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div>
+          suggestions are Loading
+        </div>
+      )}
     </div>
   )
 }

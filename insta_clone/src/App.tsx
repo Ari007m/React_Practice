@@ -1,4 +1,3 @@
-import React from 'react'
 import Sidebar from './sidebar'
 import Feed from './feed'
 import Suggestions from './suggestions'

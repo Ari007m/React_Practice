@@ -5,7 +5,7 @@
         "user": {
           "id": 101,
           "username": "john_doe",
-          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+          "profile_pic": "src/assets/pexels-photo-14653174.jpeg"
         },
         "image": "src/assets/travel-to-the-beautiful-mountain.png",
         "caption": "Beautiful sunset 🌄 #Nature",
@@ -27,7 +27,7 @@
         "user": {
           "id": 102,
           "username": "sara_k",
-          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+          "profile_pic": "src/assets/black-and-white-profile-pictures-.jpg"
         },
         "image": "src/assets/breakfast-table.png",
         "caption": "Sunday breakfast vibes 🥞☕",
@@ -45,7 +45,7 @@
         "user": {
           "id": 103,
           "username": "urban_explorer",
-          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+          "profile_pic": "src/assets/images.jpeg"
         },
         "image": "src/assets/city-hidden-gem.png",
         "caption": "Discovering hidden gems in the city 🏙️",
@@ -66,35 +66,64 @@
     "profile":{
         "id": 101,
         "username": "john_doe",
-        "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        "profile_pic": "src/assets/pexels-photo-14653174.jpeg"
     },
     "suggestions": [
         {
             "id": 101,
             "username": "john_doe",
-            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+            "profile_pic": "src/assets/pexels-photo-14653174.jpeg"
         },
         {
             "id": 102,
             "username": "sara_k",
-            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+            "profile_pic": "src/assets/black-and-white-profile-pictures-.jpg"
         },
         {
             "id": 103,
             "username": "urban_explorer",
-            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+            "profile_pic": "src/assets/images.jpeg"
         },
         {
             "id": 104,
             "username": "alice_wonder",
-            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+            "profile_pic": "src/assets/images.jpeg"
         },
         {
             "id": 105,
             "username": "mark_52",
-            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+            "profile_pic": "src/assets/images.jpeg"
         }
         
+    ],
+    "story": [
+      {
+        "id": 1,
+        "user": {
+          "id": 101,
+          "username": "john_doe",
+          "profile_pic": "src/assets/pexels-photo-14653174.jpeg"
+        },
+        "image": "/src/assets/img1.webp"
+      },
+      {
+        "id": 2,
+        "user": {
+          "id": 102,
+          "username": "sara_k",
+          "profile_pic": "src/assets/black-and-white-profile-pictures-.jpg"
+        },
+        "image": "/src/assets/img2.jpg"
+      },
+      {
+        "id": 3,
+        "user": {
+          "id": 103,
+          "username": "urban_explorer",
+          "profile_pic": "src/assets/images.jpeg"
+        },
+        "image": "/src/assets/img3.jpg"
+      }
     ]
 }
   

@@ -18,7 +18,7 @@ function Posts() {
           {posts.map((post: any) => (
             <div key={post.id}>
               <div className='d-flex'>
-                <img className='dp rounded-circules' src={post.user.profile_pic} alt="Profile Pic" />
+                <img className='dp rounded-circle' src={post.user.profile_pic} alt="Profile Pic" />
                 <h5>{post.user.username}</h5>
               </div>
               <img className='post-img' src={post.image} alt="Post" />
