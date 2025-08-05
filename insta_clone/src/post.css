@@ -1,0 +1,15 @@
+.dp{
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+/* More specific selector for suggestions */
+.suggestions-container .dp {
+    margin-top: 5px !important;
+}
+
+.post-img{
+    width: 300px;
+}

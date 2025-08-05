@@ -1,0 +1,100 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "user": {
+          "id": 101,
+          "username": "john_doe",
+          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        "image": "src/assets/travel-to-the-beautiful-mountain.png",
+        "caption": "Beautiful sunset 🌄 #Nature",
+        "likes": 120,
+        "comments": [
+          {
+            "user": "alice_wonder",
+            "comment": "Wow! Amazing shot! 📸"
+          },
+          {
+            "user": "mark_92",
+            "comment": "Where is this place?"
+          }
+        ],
+        "timestamp": "2025-02-11T14:30:00Z"
+      },
+      {
+        "id": 2,
+        "user": {
+          "id": 102,
+          "username": "sara_k",
+          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        "image": "src/assets/breakfast-table.png",
+        "caption": "Sunday breakfast vibes 🥞☕",
+        "likes": 88,
+        "comments": [
+          {
+            "user": "bakerboy",
+            "comment": "Looks delicious!"
+          }
+        ],
+        "timestamp": "2025-07-10T08:55:00Z"
+      },
+      {
+        "id": 3,
+        "user": {
+          "id": 103,
+          "username": "urban_explorer",
+          "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        "image": "src/assets/city-hidden-gem.png",
+        "caption": "Discovering hidden gems in the city 🏙️",
+        "likes": 153,
+        "comments": [
+          {
+            "user": "john_doe",
+            "comment": "I want to visit here!"
+          },
+          {
+            "user": "sara_k",
+            "comment": "Wow, love this angle."
+          }
+        ],
+        "timestamp": "2025-07-28T19:13:00Z"
+      }
+    ],
+    "profile":{
+        "id": 101,
+        "username": "john_doe",
+        "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+    },
+    "suggestions": [
+        {
+            "id": 101,
+            "username": "john_doe",
+            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        {
+            "id": 102,
+            "username": "sara_k",
+            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        {
+            "id": 103,
+            "username": "urban_explorer",
+            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        {
+            "id": 104,
+            "username": "alice_wonder",
+            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        },
+        {
+            "id": 105,
+            "username": "mark_52",
+            "profile_pic": "src/assets/profile-icon-design-free-vector.jpg"
+        }
+        
+    ]
+}
+  
