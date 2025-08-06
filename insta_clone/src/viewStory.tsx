@@ -11,14 +11,14 @@ function ViewStory() {
   useEffect(() => {
     fetch(`http://localhost:3000/story/${id}`).
     then((data) => data.json()).
-    then(data => {console.log("data :" ,data); setStory(data)}).
+    then(data => {setStory(data)}).
     catch(err => console.log(err))
   },[id]);
 
   useEffect(() => {
     fetch(`http://localhost:3000/story`).
     then((data) => data.json()).
-    then(data => {console.log(data.length);setTotal(data.length)}).
+    then(data => {setTotal(data.length)}).
     catch(err => console.log(err))
   })
 
