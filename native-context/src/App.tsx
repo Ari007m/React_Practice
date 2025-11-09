@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, createContext, useContext } from 'react'
 
 interface Pokemon{
   id:number,
@@ -12,7 +12,7 @@ interface Pokemon{
   speed: number
 }
 
-function usePokemon():{pokemon : Pokemon[]}{
+function usePokemonSource():{pokemon : Pokemon[]}{
   const[pokemon,setPokemon] = useState<Pokemon[]>([]);
 
   useEffect(() =>{
@@ -23,21 +23,32 @@ function usePokemon():{pokemon : Pokemon[]}{
   return{pokemon};
 }
 
-const PokemonList = ({pokemon}:{pokemon:Pokemon[]}) =>{
+const PokemonContext = createContext<ReturnType<typeof usePokemonSource>> ({} as unknown as ReturnType<typeof usePokemonSource>);
+
+const usePokemon = () => {
+  return useContext(PokemonContext);
+}
+
+const PokemonList = () =>{
+  const { pokemon } = usePokemon();
   return(
     <div>
-      {pokemon.map((p) => (
-        <div key={p.id}>
-          {p.name}
-        </div>
-      ))}
+      <div>
+        {pokemon.map((p) => (
+          <div key={p.id}>
+            {p.name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
-function App() {
 
-  const {pokemon} = usePokemon();
-  return (<PokemonList pokemon={pokemon}/>
+function App() {
+  return (
+    <PokemonContext.Provider value={usePokemonSource()}>
+      <PokemonList />
+    </PokemonContext.Provider>
   );
 }
 
